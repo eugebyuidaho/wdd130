@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #2B907D;
-    --secondary-color: #F0EBDC;
-    --accent1-color: #CF5C36;
+    --primary-color: #1f6b5d;
+    --secondary-color: #e0d6c6;
+    --accent1-color: #a03a1a;
     --accent2-color: #050517;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Roboto', sans-serif;
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #222;
 }
 
 header,
@@ -43,7 +43,7 @@ header img {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav ul {
