@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WDD 130 | HTML Form User Poll</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 05 Poll Form</title>
 </head>
 
 <body>
     <header>
-        <h1>WDD 130 | Eugenia Schulz | HTML Form User Poll</h1>
+        <h1>Website Poll</h1>
     </header>
+
     <main>
-        <form>
+        <form action="#" method="post">
+            <!-- Fieldset 1: Contact Information -->
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail">
+
+                <!-- Full Name -->
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g., Jane Doe" required />
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="e.g., jane@example.com" required />
+                </div>
             </fieldset>
+
+            <!-- Fieldset 2: Questions -->
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite internet browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="other">Other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="feedback">List the places you have lived:</label>
-                <textarea id="feedback" name="feedback" rows="4"
-                    placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+
+                <!-- Favorite Browser -->
+                <div>
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="chrome">Google Chrome</option>
+                        <option value="firefox">Mozilla Firefox</option>
+                        <option value="edge">Microsoft Edge</option>
+                        <option value="safari">Safari</option>
+                    </select>
+                </div>
+
+                <!-- Household Pet -->
+                <div>
+                    <input type="checkbox" id="pet" name="pet" value="yes" />
+                    <label for="pet">Do you have a household pet?</label>
+                </div>
+
+                <!-- Places You Have Lived -->
+                <div>
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="e.g., Buenos Aires, Córdoba, Rosario"></textarea>
+                </div>
             </fieldset>
+
+            <!-- Submit Button -->
             <button type="submit">Submit Poll</button>
         </form>
     </main>
+
     <footer>
-        <p>©2025 | HTML Form User Poll Activity | Eugenia Schulz</p>
+        <p>&copy; 2025 Your Name or Your Site</p>
     </footer>
 </body>
 
