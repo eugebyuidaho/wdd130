@@ -16,23 +16,31 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #333333;
     background-color: #f9f9f9;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
+main a,
+#company-info,
+#map a,
+#employees a,
+#contact-form a {
+    color: #003366;
+    text-decoration: underline;
 }
 
-a:hover {
-    text-decoration: underline;
+main a:hover,
+#company-info a:hover,
+#map a:hover,
+#employees a:hover,
+#contact-form a:hover {
+    color: #002244;
 }
 
 
 header {
     background-color: #004a99;
-    color: #fff;
+    color: #ffffff;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -77,7 +85,7 @@ h2 {
 
 
 #company-info {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 4px;
@@ -95,27 +103,27 @@ h2 {
 
 
 #map {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 #map iframe {
     width: 100%;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
 
 #employees {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     text-align: center;
 }
 
@@ -136,7 +144,7 @@ h2 {
     height: auto;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 #employees figcaption {
@@ -147,17 +155,14 @@ h2 {
 
 
 #contact-form {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 4px;
-    border: 1px solid #ddd;
-    color: #333333;
+    border: 1px solid #dddddd;
 }
 
-#contact-form h2 {
-    margin-bottom: 1rem;
-}
+
 
 #contact-form form {
     max-width: 500px;
@@ -168,6 +173,7 @@ h2 {
 }
 
 #contact-form label {
+    color: #333333;
     font-weight: bold;
 }
 
@@ -176,9 +182,11 @@ h2 {
 #contact-form textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
 }
 
 #contact-form textarea {
@@ -194,6 +202,7 @@ h2 {
 #contact-form fieldset legend {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #333333;
 }
 
 #contact-form fieldset label {
@@ -201,6 +210,7 @@ h2 {
     align-items: center;
     font-weight: normal;
     margin-bottom: 0.25rem;
+    color: #333333;
 }
 
 #contact-form input[type="radio"],
@@ -209,11 +219,12 @@ h2 {
 }
 
 .checkbox-label {
+    color: #666666;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-weight: normal;
-    color: #666666;
+
 }
 
 #contact-form button {
@@ -234,14 +245,14 @@ h2 {
 
 footer {
     background-color: #004a99;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: underline;
 }
 
