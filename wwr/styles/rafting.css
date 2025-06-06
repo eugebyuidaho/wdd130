@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #003366;
     font-weight: bold;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
@@ -59,6 +59,7 @@ nav a {
 nav a.active,
 nav a:hover {
     background-color: #003366;
+    color: #ffffff;
 }
 
 
@@ -151,6 +152,7 @@ h2 {
     margin-bottom: 2rem;
     border-radius: 4px;
     border: 1px solid #ddd;
+    color: #333333;
 }
 
 #contact-form h2 {
@@ -211,11 +213,12 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     font-weight: normal;
+    color: #666666;
 }
 
 #contact-form button {
-    background-color: #0066cc;
-    color: #fff;
+    background-color: #003366;
+    color: #ffffff;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
@@ -225,7 +228,7 @@ h2 {
 }
 
 #contact-form button:hover {
-    background-color: #005bb5;
+    background-color: #002244;
 }
 
 
